@@ -266,16 +266,16 @@ Ahí debería aparecer la página que se ha creado.
 
 En esta captura se puede ver que el servicio Apache está funcionando correctamente.
 
-![Apache funcionando](imagenes/apache-funcionando.png)
+![Apache funcionando](apache.png)
 
 ### Página web
 
 En esta captura se puede ver la página de Apache desde el navegador del ordenador anfitrión.
 
-![Página web](imagenes/pagina-web.png)
+![Página web](navegador.png)
 
 ### Interfaces y rutas
 
 En esta captura se pueden ver las interfaces y las rutas de red de la máquina virtual.
 
-![Interfaces y rutas](imagenes/red.png)
+![Interfaces y rutas](red.png)
