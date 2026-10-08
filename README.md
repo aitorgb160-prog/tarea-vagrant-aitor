@@ -31,7 +31,7 @@ config.vm.box = "debian/bookworm64"
 Esta línea indica que la máquina utilizará una box de Debian 12.
 
 ```
-config.vm.hostname = "TU_NOMBRE"
+config.vm.hostname = "aitordebian"
 ```
 
 Esta línea indica un nombre identificable a la máquina.
@@ -60,9 +60,9 @@ En VirtualBox la he configurado como una red interna llamada `red-laboratorio`.
 Por último:
 
 ```
-config.vm.provision "shell", path: "instalar_apache.sh"
+config.vm.provision "shell", path: "apache.sh"
 ```
-Esta línea indica a Vagrant que debe ejecutar el script `instalar_apache.sh` para preparar la máquina.
+Esta línea indica a Vagrant que debe ejecutar el script `apache.sh` para preparar la máquina.
 
 ## 4. Redes
 
@@ -94,7 +94,7 @@ La NAT y la red de laboratorio tienen funciones diferentes. La NAT se utiliza pr
                 |                 |
                 |          192.168.56.10
                 |                 |
-                +-------- Debian 12
+                +-------- Debian
                               |
                            Apache
                               |
@@ -119,7 +119,7 @@ El script se ejecuta dentro de la máquina Debian, no directamente en mi ordenad
 En el Vagrantfile utilizo:
 
 ```
-config.vm.provision "shell", path: "instalar_apache.sh"
+config.vm.provision "shell", path: "apache.sh"
 ```
 
 Con path indico el archivo que Vagrant tiene que ejecutar.
@@ -214,7 +214,7 @@ En ella puedo encontrar los archivos del proyecto, como por ejemplo:
 
 ```
 Vagrantfile
-instalar_apache.sh
+apache.sh
 README.md
 ```
 
